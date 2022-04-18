@@ -52,8 +52,14 @@ Alter table 'Table Name'
 
 ### Errors
 
-1. **months error**
+1. **Date error**
 
    ```sql
     ALTER session set NLS_DATE_FORMAT=’DD/MM/YYYY’;
+   ```
+
+2. **timestamp erorr**
+
+   ```sql
+   alter session set NLS_TIMESTAMP_FORMAT='YYYY-MM-DD HH:MI:SS.FF';
    ```

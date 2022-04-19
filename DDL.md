@@ -82,4 +82,8 @@ SQL> Alter table 'Table Name'
         SQL> alter user username identified by password;
 
     - 'Here username is the name of user whose password you want to change and password is the new password.'
+
+    - 'To Delete Users'
+
+        SQL> drop user 'username' cascade;
 ```

@@ -14,19 +14,26 @@
 
    1. create Database with `Username` And `password`
 
+![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
+
 ### First Step -> Create Schema then Table
 
 ```sql
 SQL> create table Table_Name_Capital
 (
      'Name     Datatype   NULL/NOT  Default if exists'
+
     Attirbute1   int       NOT NULL  default =000000,
     Attirbute2   number(1) NOT NULL CHECK ( Semester > 0 AND Semester < 4 ),
     Attirbute3   char(2)   NOT NULL,
+
      'like flags the next line'
+
     constraint ATM_PK
         primary key (St_ID, C_ID, Pro_ID, Year, Semester)
+
      'if you have candidate keys you can use `Unique`'
+
     unique(attribute1,...);
 );
 ```
@@ -34,21 +41,45 @@ SQL> create table Table_Name_Capital
 ### Second Step -> Add Foreign Keys
 
 ```sql
-SQL> Alter table 'Table Name'
-    add foreign key ('PK in current Table') references 'PK_Table' ('PK_Name');
+    SQL> Alter table 'Table Name'
+        add foreign key ('PK in current Table') references 'PK_Table' ('PK_Name');
 ```
 
 ### Third Step -> Test DataBase And Constraints
 
 1. **Insert**
 
-   ```sql
-       - 'Insert All Attriburte In one step'
-           SQL> insert into 'Table Name' Values(,,,);
-       - 'Insert Spacify Attribute if and only if the other att. is NULL'
-           SQL> insert into 'Table Name'(att1,att2,...)
-               values (,,...);
-   ```
+```sql
+    - 'Insert All Attriburte In one step'
+
+        SQL> insert into 'Table Name' Values(,,,);
+
+    - 'Insert Spacify Attribute if and only if the other att. is NULL'
+
+        SQL> insert into 'Table Name'(att1,att2,...) values (,,...);
+```
+
+![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
+
+### Create, Update and remove on table
+
+```sql
+    1. 'Create Table is mention above'
+
+    2. 'To insert a missing attribute'
+
+        SQL> alter table 'Table_name' add 'Attribute Name' 'DT:number'
+
+    3. 'Remove a specify Atrribute'
+
+        SQL> alter table 'Table_name' drop column 'Atrribute_Name'
+
+    4. 'Remove Table'
+
+        SQL> drop table 'Table_name'
+```
+
+![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
 
 ### Errors Section
 

@@ -6,7 +6,7 @@
     SQL> connect username/password;
 ```
 
-## To Connect int DataGrip
+## To Connect in DataGrip
 
 1. Goto `Create Schema First`
 
@@ -14,7 +14,7 @@
 
    1. create Database with `Username` And `password`
 
-![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
+![Sec1](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
 
 ### First Step -> Create Schema then Table
 
@@ -59,7 +59,7 @@ SQL> create table Table_Name_Capital
         SQL> insert into 'Table Name'(att1,att2,...) values (,,...);
 ```
 
-![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
+![Sec2](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
 
 ### Create, Update and remove on table
 
@@ -79,7 +79,47 @@ SQL> create table Table_Name_Capital
         SQL> drop table 'Table_name'
 ```
 
-![](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
+![Sec3](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
+
+### Datetype
+
+- STRING
+
+  ```sql
+      - 'VAR -> it is have fixed size'
+
+          SQL> ATT_Name_Capital  VAR
+
+      - 'VARCHAR(x) -> it is have variable size limited with x'
+
+          SQL> ATT_Name_Capital  VARCHAR(max size)
+  ```
+
+- DATE
+
+  ```SQL
+      - 'DATE -> it is record Date not intersted When happend'
+
+          SQL> ATT_Name_Capital DATE
+
+      - 'DATETIME -> it is recorded date with time'
+
+          SQL> ATT_Name_Capital DATETIME
+
+      - 'TIMESTAMP -> it is recorded date with time for now is update or added'
+
+          SQL> ATT_Name_Capital TIMESTAMP
+  ```
+
+- NUMBERS
+
+  ```SQL
+      - 'DECIMAL(Before dec point (int),After dec point (fraction) )'
+
+      SQL> ATT_Name_Capital DECIMAL(X,Y)
+  ```
+
+![Sec4](https://camo.githubusercontent.com/76109812f3127b0f86940373897b04ac8943cb3c0f057f90046444480f61bafd/68747470733a2f2f692e696d6775722e636f6d2f77617856496d762e706e67?utm_source=pocket_mylist)
 
 ### Errors Section
 
